@@ -3,22 +3,21 @@
  */
 import java.util.Scanner;
 
-@SuppressWarnings("resource")
 public class Anagram {
 	public static boolean isAnagram(String s1, String s2) {
 		String A1, A2;
-		System.out.println("The space removal will be done from here:-");
+		//System.out.println("The space removal will be done from here:-");
 		A1 = removespace(s1);
-		System.out.println(A1);
+		//System.out.println(A1);
 		A1 = A1.toUpperCase();
 		A2 = removespace(s2);
-		System.out.println(A2);
+		//System.out.println(A2);
 		A2 = A2.toUpperCase();
-		System.out.println("The Arranging will be done from here:-");
+		//System.out.println("The Arranging will be done from here:-");
 		A1 = arrange(A1);
-		System.out.println(A1);
+		//System.out.println(A1);
 		A2 = arrange(A2);
-		System.out.println(A2);
+		//System.out.println(A2);
 		if (A1.equals(A2) == true) {
 			return true;
 		} else
@@ -76,6 +75,7 @@ public class Anagram {
 			System.out.println("The entered strings are anagram. ");
 		else
 			System.out.println("The entered strings are not anagram.");
+		n.close();
 
 	}
 
